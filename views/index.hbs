@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href="http://rawgithub.com/jharding/typeahead.js-bootstrap.css/master/typeahead.js-bootstrap.css" rel="stylesheet" media="screen">
+<link rel='stylesheet' href='/stylesheets/index.css'/>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="panel panel-default">
+				<div class="panel-heading"> <i class="fa fa-user">&nbsp;&nbsp;</i>Profile</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-8">
+							<p>UserName: {{user.username}}</p>
+							<p>Email Address: {{user.email}}</p>
+							<p>Bio: {{user.bio}}</p>
+						</div>
+						<div class="col-md-4">
+							<p>Gender:</p>
+							<p>Followers:{{user.foundcount}}</p>
+							<p>Following:</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='edit'>
+				<a class="btn btn-primary" href =/edit/{{user.id}}>Edit Profile</a>
+			</div>	
+		</div>
+		<div class="col-md-6">
+			<form action="/search" method="post">
+				<input id="typeahead-input" class="typeahead tt-query"type="text" placeholder="Search Username" data-provide="typeahead" name ="search">
+			</form>
+		</div>
+	</div>
+</div>
+
+{{#if user}}
+	<p>Hello {{user.username}} You are logged in</p>
+{{else}}
+	<p>Abeg bros try log in.</p>
+{{/if}}
+
+<button><a href="/logout">Logout</a></button>
+<script type="text/javascript" src="/javascripts/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="/javascripts/typeaheadlocal.js"></script>
+<script type="text/javascript" src ="/javascripts/index.js"></script>

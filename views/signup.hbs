@@ -1,0 +1,31 @@
+<link rel='stylesheet' href='/stylesheets/signup.css'/>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4 col-md-push-4 contain">
+			<h1 class="text-center">Welcome on Board</h1>
+			<form id="signupform">
+				<div class="form-group text-center">
+					<input type="text" name="username" class="uname" placeholder="Username"/>
+				</div>
+				<div class="form-group text-center">
+					<input type="text" name="email" class="mail" placeholder="Email"/>
+				</div>
+				<div class="form-group text-center">
+					<input type="password" name="password" class="password1" placeholder="Create a Password">
+				</div>
+				<div class="form-group text-center">
+					<input type="password" name="confirmpassword" class="password2" placeholder="Confirm Your Password">
+				</div>
+				<div class="form-group text-center">
+					<button class="signup">Create an Account</button>
+				</div>
+			</form>
+			<br>
+			<br>
+			<span id='passwordfail'></span>
+			<span id='passwordsuccess'></span>
+		</div>
+	</div>
+</div>
+<script src="/javascripts/jquery-2.1.1.min.js"></script>
+<script src="/javascripts/signup.js"></script>

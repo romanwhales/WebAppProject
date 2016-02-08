@@ -1,0 +1,14 @@
+@font-face{
+	font-family: Roboto;
+	src:url('../fonts/Roboto-Light.ttf');
+}
+body{
+	font-family: Roboto;
+	padding-top: 20px;
+}
+.panel-default>.panel-heading{
+	background-color: #866BC0;
+}
+.follow{
+	direction:rtl;
+}

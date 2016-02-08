@@ -1,0 +1,39 @@
+<link rel='stylesheet' href='/stylesheets/login.css'/>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-8 col-md-4 col-md-offset-4 formdiv">
+			<div class="profile form-group">
+				<img src="images/profile.png" class="profileimg">
+			</div>
+			<div class="form-group member">
+				<h4>Already a member</h4>
+				<p>Sign in to your account</p>
+			</div>
+			<form action='/loginn' method="post">
+				<div class="email form-group">
+					<input type="text" name="email" placeholder="Email"/>
+				</div>
+				<div class="pasword form-group">
+					<input type="password" name="password" placeholder="Password"/>
+				</div>
+				<div class="submitbutton form-group">
+					<input type="submit" value="Sign me in">
+				</div>
+				<p class="reset"><a href ="/forgot">Forgot Password</a></p>
+				<hr>
+				<div class="fb form-group">
+					<a class="btn facebook"  href ="/auth/facebook">Sign in with Facebook</a>
+				</div>
+				<div class="twitterd form-group">
+					<a class="btn twitter"  href ="/auth/twitter">Sign in with Twitter</a>
+				</div>
+				<div class="googled form-group">
+					<a class="btn google"  href ="/auth/google">Sign in with Google+</a>
+				</div>
+				<div class="form-group">
+				<p class="newuser">New User? <a href ="/signup">Sign Up</a></p>
+				</div>
+			</form>
+		</div>
+	</div>	
+</div>

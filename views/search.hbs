@@ -1,0 +1,36 @@
+<h1>Here's the Profile Page of {{users.username}}</h1>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='/stylesheets/search.css'/>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="panel panel-default">
+				<div class="panel-heading"> <i class="fa fa-user">&nbsp;&nbsp;</i>Profile</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-8">
+							<p>UserName: {{users.username}}</p>
+							<p>Email Address: {{users.email}}</p>
+							<p>Bio: {{users.bio}}</p>
+						</div>
+						<div class="col-md-4">
+							<p>Gender:{{users.gender}}</p>
+							<p>Followers: {{users.followercount}}</p>
+							<p>Following: {{users.foundcount}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="follow">
+				<form action=/follow/{{users.id}}>
+					<a class="btn btn-primary ff">Follow</a>
+				</form>
+			</div>
+			<div>
+				<p id="response"></p>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="/javascripts/jquery-2.1.1.min.js"></script>
+<script src="/javascripts/search.js"></script>

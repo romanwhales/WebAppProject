@@ -1,0 +1,6 @@
+<h1>Hello {{user.name.givenName}} You are logged in </h1>
+<p>Your gender is {{user.gender}}</p>
+{{#each user.emails}}
+	<h1>Email is {{this.value}}</h1>
+{{/each}}
+<button><a href="/logout">Logout</a></button>

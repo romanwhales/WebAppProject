@@ -1,0 +1,12 @@
+@font-face{
+	font-family: Roboto;
+	src:url('../fonts/Roboto-Light.ttf');
+}
+body{
+	font-family: Roboto;
+	padding-top: 20px;
+}
+
+.btns{
+	text-align: right;
+}

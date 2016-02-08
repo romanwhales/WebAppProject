@@ -1,0 +1,16 @@
+@font-face{
+  font-family: Roboto;
+  src:url('../fonts/Roboto-Light.ttf');
+}
+body{
+	font-family: Roboto;
+}
+a {
+  color: #00B7FF;
+}
+#passwordfail{
+	color: red;
+}
+#passwordsuccess{
+	color: green;
+}
