@@ -145,8 +145,7 @@ router.post('/forgot',function(req,res){
 					var smtpTransport = nodemailer.createTransport('SMTP',{
 						service:'Gmail',
 						auth:{
-							user:'walesunmonu@gmail.com',
-							pass:'buraimo31'
+							user:'walesunmonu@gmail.com'
 						}
 					});
 					smtpTransport.sendMail({
